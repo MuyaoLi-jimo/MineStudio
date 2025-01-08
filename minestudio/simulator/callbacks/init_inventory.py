@@ -132,7 +132,7 @@ class InitInventoryCallback(MinecraftCallback):
         
         if isinstance(item_quantity,str):
             
-            candidate_nums=set(range(MIN_ITEMS_NUM, max_items_num + 1))
+            candidate_nums=set(range(MIN_ITEMS_NUM+1, max_items_num + 1))
             
             if item_quantity == "random":
                 one_flag = random.choices([True, False], weights=[one_p, 1 - one_p], k=1)[0]
